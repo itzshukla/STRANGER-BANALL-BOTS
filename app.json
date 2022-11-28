@@ -1,0 +1,82 @@
+{
+    "name": "Ban All Bot",
+    "logo": "",
+    "keywords": [
+        "python",
+        "telegram"
+    ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+     },
+       "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+    "env": {
+        "BOT_TOKEN1": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN2": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN3": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN4": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN5": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN6": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN7": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN8": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN9": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN10": {
+            "description": "Your bot token",
+            "value": "",
+            "required": true
+        },
+        "SUDO": {
+            "description": "sudo ids here.",
+            "value": "",
+            "required": true
+        }
+    }
+}
