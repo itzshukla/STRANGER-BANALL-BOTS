@@ -1,29 +1,9 @@
 {
-    "name": "Ban All Bot",
+    "name": "Ban All Bots",
     "logo": "",
-    "keywords": [
-        "python",
-        "telegram"
-    ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-     },
-       "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
+    "repository": "https://github.com/ItZxSTaR/XBOTS",
     "env": {
-        "BOT_TOKEN1": {
+      "BOT_TOKEN1": {
             "description": "Your bot token",
             "value": "",
             "required": true
@@ -78,5 +58,10 @@
             "value": "",
             "required": true
         }
-    }
+    },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
