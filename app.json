@@ -5,22 +5,22 @@
      "env": { 
        "BOT_TOKEN1": { 
              "description": "", 
-             "value": "6531192112:AAEyUnL2B9cwP7XsBa-b6nMeUjO_SjeaYmk", 
+             "value": "6450493860:AAHRZtblyp1rmlmAO27Pr2IAi-8vLcb8e1Q", 
              "required": true 
          }, 
          "BOT_TOKEN2": { 
              "description": "", 
-             "value": "", 
+             "value": "6541458221:AAEAnHDheuqfVnAYv8R25Tw5S508wjZcdUM", 
              "required": true 
          }, 
          "BOT_TOKEN3": { 
              "description": "", 
-             "value": "6473178109:AAEzdjaPi2RYNRHYlHWgEuRxMOhqIRb5zso", 
+             "value": "6531192112:AAEyUnL2B9cwP7XsBa-b6nMeUjO_SjeaYmk", 
              "required": true 
          }, 
          "BOT_TOKEN4": { 
              "description": "", 
-             "value": "", 
+             "value": "6473178109:AAEzdjaPi2RYNRHYlHWgEuRxMOhqIRb5zso", 
              "required": true
          }, 
          "BOT_TOKEN5": { 
