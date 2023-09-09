@@ -78,7 +78,7 @@ async def banall(event):
                 pass
 
 
-print("TEAM LEGENDZ OP")
+print("OP CODEXXX")
 
 Evil1.run_until_disconnected()
 Evil2.run_until_disconnected()
