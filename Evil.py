@@ -78,7 +78,7 @@ async def banall(event):
                 pass
 
 
-print("𝗦υϲϲєѕѕƒυℓ 𝗗єρℓογ 𝗕γ 𝗖𝗢𝗗𝗘𝗫")
+print("💞 𝗦υϲϲєѕѕƒυℓ 𝗗єρℓογ 𝗕γ 🕸️ 𝗖𝗢𝗗𝗘𝗫 💨")
 
 Evil1.run_until_disconnected()
 Evil2.run_until_disconnected()
