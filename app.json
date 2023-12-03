@@ -1,61 +1,61 @@
 { 
-     "name": "☆ 🇨Ⓞ𝗗𝜩🇽 ☆", 
+     "name": "🕸️ 🇨Ⓞ𝗗𝜩🇽 💨", 
      "logo": "https://graph.org/file/8818c5e9470d2c6920a97.jpg", 
-     "repository": "https://github.com/MrHacker5575/CoDeX_BAN_BOTs", 
+     "repository": "https://github.com/MrH4CK3R474/CDX-BANALL-BOTS", 
      "env": { 
        "BOT_TOKEN1": { 
              "description": "", 
-             "value": "6391672562:AAG3zdTD5Ut31QWbG-N4agx5JcFnxBweHjw", 
+             "value": "6837615457:AAGvJ-g7pLQkBzg4QpRa7raTapRx2ow9ZqI", 
              "required": true 
          }, 
          "BOT_TOKEN2": { 
              "description": "", 
-             "value": "6187080077:AAFaDhB8PLIhTvnr5YBXslG5QcfG8DZ0of4", 
+             "value": "6926148427:AAHtd8zwv9dmgJHVkQ7fKpQ1qpdskkTmrS8", 
              "required": true 
          }, 
          "BOT_TOKEN3": { 
              "description": "", 
-             "value": "6064260214:AAGTYjf7TflbtYOHOVFSrtNbh4WDhXFzL0U", 
+             "value": "6739590937:AAESAIKVf5RJz_zUDRKAPAJdTdzOwDwGIkM", 
              "required": true 
          }, 
          "BOT_TOKEN4": { 
              "description": "", 
-             "value": "6358806751:AAEupi6C-lmHyMexsKzTYPBj_NCV7yeSEtU", 
+             "value": "6942368987:AAFTB8d4ZQgWv64N1dSFAoqAL5muJRUeRJk", 
              "required": true
          }, 
          "BOT_TOKEN5": { 
              "description": "", 
-             "value": "6311352772:AAF0XHFL__WYlVrCPhHq7i1RmFTt7zDHg2Y", 
+             "value": "6402809633:AAG2Ftt0T5gRB9BcGOyrjNzCeOH_QWdnc_4", 
              "required": true 
          }, 
          "BOT_TOKEN6": { 
              "description": "", 
-             "value": "6692973687:AAGi1nb1zy1Fkn78TBOg5Bn4hFI5SH-in48", 
+             "value": "6828957005:AAEHfXw9TRhLlWTSgTwJAExypgIEsyQ7E6Y", 
              "required": true 
          }, 
          "BOT_TOKEN7": { 
              "description": "", 
-             "value": "6288480865:AAGWIJUwMCMjOSs-phAQ69y9PKir6O-4ies", 
+             "value": "6988555102:AAHJeutJmmy_W7zt1VAT5z9F2PtLoCt0PN4", 
              "required": true 
          }, 
          "BOT_TOKEN8": { 
              "description": "", 
-             "value": "6688269909:AAGXyxtsoImCxYJFbeSx1cl3SI2ybQN-8R0", 
+             "value": "6891011537:AAEb0YSPX71XuB9cQlFjjEN-g1Ujv73Dw1Y", 
              "required": true 
          }, 
          "BOT_TOKEN9": { 
              "description": "", 
-             "value": "5670439549:AAG8TTtYkK56V5G8ngZ9R_2Gs5qhkO1Qdr4", 
+             "value": "6824935332:AAHnO9SX6HRixjUS3VKCmLjMppjShplTt-c", 
              "required": true 
          }, 
          "BOT_TOKEN10": { 
              "description": "", 
-             "value": "6336147033:AAE6SJALq1HAQXiqX8CzUvL24OK3FQ_w1IU", 
+             "value": "6932499137:AAE8t40SotQv5OTgAmlk0Fc0T_n3epvTQYQ", 
              "required": true 
          }, 
          "SUDO": { 
              "description": "", 
-             "value": "6123932615 1690209622", 
+             "value": "6321280493", 
              "required": true 
          } 
      }, 
