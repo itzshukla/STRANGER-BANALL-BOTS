@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/TEAM_CDX"><img src="https://te.legra.ph/file/63531adaa61fd0c91a556.jpg"></a></p>      
+<p align="center"><a href="https://t.me/TEAM_CDX"><img src="https://te.legra.ph/file/8e779ca298fb47f368f2b.jpg"></a></p>      
   
            
            ─「 ᎠᎬᏢᏞϴᎽ ϴΝ ᎻᎬᎡϴᏦႮ 」─      
